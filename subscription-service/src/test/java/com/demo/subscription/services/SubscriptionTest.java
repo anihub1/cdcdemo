@@ -12,15 +12,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static com.demo.subscription.domain.Subscription.SubscriptionType.MONTHLY;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureStubRunner(ids = "com.demo:account-service:+:stubs:8061", workOffline = true)
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
+//@AutoConfigureStubRunner(ids = "com.demo:account-service:+:stubs:8061", workOffline = true)
 public class SubscriptionTest {
 
     @Autowired
     private SubscriptionService service;
 
-    @Test
+  //  @Test
     public void shouldGiveFreeSubscriptionForFriends() throws Exception {
 
         // given:
